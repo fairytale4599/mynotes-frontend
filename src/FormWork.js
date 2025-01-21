@@ -1,10 +1,12 @@
 import axios from 'axios';
 
 const REST_API_BASE_URL = 'http://localhost:8080/api/notes';
-const consoleLogElement = document.getElementById("cons-log")
 
 const FormWork = async (noteTitle, noteText, noteID) => {
     let consoleLog = "";
+    let date = new Date();
+    let dateConverted = date.toISOString();
+
     for (var i = 0; i < document.getElementsByName("radio").length; i++) {
         if (document.getElementsByName("radio")[i].checked) {
             if (i === 0) {
@@ -12,6 +14,7 @@ const FormWork = async (noteTitle, noteText, noteID) => {
                     await axios.post(REST_API_BASE_URL, {
                         "note_title": noteTitle,
                         "note_text": noteText,
+                        "created_at": dateConverted
                     });
                     consoleLog = "Note has been added, please restart the page";
                 } catch (error) {
@@ -23,6 +26,7 @@ const FormWork = async (noteTitle, noteText, noteID) => {
                         "id": noteID,
                         "note_title": noteTitle,
                         "note_text": noteText,
+                        "created_at": dateConverted
                     });
                     consoleLog = "Note has been updated, please restart the page";
                 } catch (error) {
