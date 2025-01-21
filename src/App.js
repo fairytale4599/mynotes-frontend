@@ -1,22 +1,19 @@
 import './App.css';
+import Notes from './Notes';
+import NotesForm from "./NotesForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="#" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="mynotes-app-background">
+        <div className="mynotes-app-container">
+            <header className="mynotes-container-header"><h1>My Notes</h1></header>
+            <main className="mynotes-container-main">
+                <section className="mynotes-container-form"><NotesForm /></section>
+                <section className="mynotes-container-notes"><Notes/></section>
+            </main>
+        </div>
+      </div>
     </div>
   );
 }

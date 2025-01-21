@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mynotes-app-background {
+  background-color: whitesmoke;
+  width: 1500px;
+  height: 800px;
+  margin-top: 5%;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.mynotes-app-container {
+  width: 90%;
+  height: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mynotes-container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.mynotes-container-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90%;
+}
+
+.mynotes-container-notes, .mynotes-container-form {
+  width: 45%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.mynotes-container-notes {
+  overflow: scroll;
 }

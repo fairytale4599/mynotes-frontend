@@ -1,0 +1,35 @@
+#form-notes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40%;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    input[type="text"] {
+        border-radius: 15px;
+        font-family: "Quicksand", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        border: 0;
+        height: 30px;
+    }
+
+    #note-text {
+        height: 100px;
+    }
+
+    h3 {
+        line-height: 0;
+    }
+
+    input[type="text"]:focus {outline: none;}
+}
