@@ -2,3 +2,17 @@
     display: flex;
     justify-content: space-between;
 }
+
+.note-container {
+    background-color: #feff9c;
+    margin: 15px;
+    padding: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 45px;
+
+    footer {
+        color: rgba(0,0,0,0.5);
+    }
+}

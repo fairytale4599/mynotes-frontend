@@ -96,7 +96,7 @@ function NotesForm() {
                     />
                 </>
             )}
-            <button type="submit">Submit</button>
+            <button type="submit" className="mynotes-submit">Submit</button>
             <div className="form-radio">
                 <input
                     type="radio"

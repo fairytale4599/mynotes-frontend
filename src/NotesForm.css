@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
 
     font-family: "Quicksand", sans-serif;
     font-size: 16px;
@@ -21,6 +21,11 @@
         font-weight: 400;
         border: 0;
         height: 30px;
+        transition: border 0.5s ease-in-out;
+    }
+
+    input[type="text"]:focus {
+        border: 1px solid black;
     }
 
     #note-text {
@@ -32,4 +37,33 @@
     }
 
     input[type="text"]:focus {outline: none;}
+}
+
+.mynotes-submit {
+    margin: 35px 0 35px 0;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.mynotes-submit:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.form-radio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    justify-content: space-between;
+
+    input[type='radio'] {
+        transform: scale(2);
+    }
 }
