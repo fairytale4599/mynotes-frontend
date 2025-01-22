@@ -45,3 +45,21 @@
 .mynotes-container-notes {
   overflow: scroll;
 }
+
+.input-search {
+  input[type="text"] {
+    border-radius: 15px;
+    outline: none;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    height: 30px;
+    width: 100%;
+    transition: border 0.5s ease-in-out;
+  }
+
+  input[type="text"]:focus {
+    border: 1px solid black;
+  }
+}
